@@ -38,9 +38,13 @@ console.log(result2);  /* print the value of result2, which should output the th
 
 /* ------------------------------No 3 problem------------------------------ */
 
-/* Write an arrow function that will take 2 parameters: One parameter
-will come from you and the other parameter will be a default
-parameter. Add these two parameters and return the result. */
+/*
+Write an arrow function that will take 2 parameters:
+One parameter will come from you and the other parameter will be a default
+parameter. Add these two parameters and return the result.
+
+Print the result.
+*/
 
 const add = (num1, num2 =20) => {  /* define an arrow function called add that takes two parameters, num1 and num2, with num2 having a default value of 20 if no value is passed for num2 */
 

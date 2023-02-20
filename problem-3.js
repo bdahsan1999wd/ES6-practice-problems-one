@@ -10,22 +10,16 @@ c) Return the average of the sum of the squared elements
 Print the result.
 */
 
+const squareAndAverage = array => {  /* define an arrow function squareAndAverage that takes an array as input */
 
-/* Define the arrow function squareAndAverage that takes an array as an argument. */
-const squareAndAverage = array => {
+  const squaredArray = array.map(number =>Math.pow(number, 2));  /* create a new array squaredArray with each element squared using Math.pow() method */
 
-    /* Create a new array squaredArray using the map() method to square each element of the input array. */
-    const squaredArray = array.map(elem => elem ** 2);
+  const sumOfSquares = squaredArray.reduce((a, b) => a + b, 0);  /* calculate the sum of the squared elements using reduce() method with an initial value of 0 */
 
-    /* Calculate the sum of the squared elements using the reduce() method with an initial accumulator value of 0. */
-    const sumOfSquares = squaredArray.reduce((acc, curr) => acc + curr, 0);
+  const avgOfSquares = sumOfSquares / array.length;  /* calculate the average of the squared elements by dividing the sum by the length of the array */
 
-    /* Calculate the average of the sum of squared elements by dividing the sumOfSquares by the length of the input array. */
-    const avgOfSquares = sumOfSquares / array.length;
-
-    /* Return the average of squared elements. */
-    return avgOfSquares;
+  return avgOfSquares;  /* return the average of the squared elements */
   };
   
-  /* Print the result of calling the squareAndAverage function with an input array [10, 20, 30, 40, 50]. */
-  console.log(squareAndAverage([10, 20, 30, 40, 50]));
+  console.log(squareAndAverage([10, 20, 30, 40, 50])); /* call the squareAndAverage function with an input array and print the result to the console */
+  

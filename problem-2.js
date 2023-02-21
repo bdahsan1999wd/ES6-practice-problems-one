@@ -33,7 +33,7 @@ Print the result.
 
 
 
-/* -------------------------other way filter method---------------------------------- */
+/* -------------------------No 2 Problem other way Using filter method------------------------- */
 
   /* Define a function called 'friends' that takes an array of strings as its parameter */
 const friends = (friendsArray) => {

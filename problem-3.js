@@ -22,4 +22,3 @@ const squareAndAverage = array => {  /* define an arrow function squareAndAverag
   };
   
   console.log(squareAndAverage([10, 20, 30, 40, 50])); /* call the squareAndAverage function with an input array and print the result to the console */
-  
